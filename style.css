@@ -13,7 +13,7 @@
         --bg-color: #080808;
         --second-bg-color: #131313;
         --text-color: white;
-        --main-color: #00ffee;
+        --main-color: #8a8a8a;
     }
     html {
         font-size: 60%;
@@ -537,7 +537,7 @@
 
     .portfolio .heading {
         font-size: 36px;
-        color: #00ffee;
+        color: #8a8a8a;
         margin-bottom: 30px;
     }
 
