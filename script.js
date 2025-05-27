@@ -19,3 +19,24 @@ window.onscroll = () => {
     })
 }
 
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+}
+
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (!menuIcon.contains(e.target) && !navbar.contains(e.target)) {
+        navbar.classList.remove('active');
+        menuIcon.classList.remove('bx-x');
+    }
+});
+
+// Close menu when clicking a nav link
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navbar.classList.remove('active');
+        menuIcon.classList.remove('bx-x');
+    });
+});
+
